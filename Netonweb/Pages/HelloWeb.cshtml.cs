@@ -10,9 +10,14 @@ namespace Netonweb.Pages
 {
     public class HelloWebModel : PageModel
     {
-        public void OnGet()
-        {}
-            public Student Sicco = new();
+        public string Message { get; set; } = "In page model: ";
+        public Student Sicco = new(1, "Sicco", 3);
+
+        string[] names = { "Alexandra", "Julio", "Mark", "Nattaya", "Laila", "Paul", "Jens", "Anton", "Oscar", "Marte", "Viktor", "Micha", "Peter", "Thomas", "Jenifer", "Elia","Kai","Serkan"};
+            
     }
-    }
+}
+
+
+
 
