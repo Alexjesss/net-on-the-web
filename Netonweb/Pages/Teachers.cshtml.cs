@@ -8,22 +8,18 @@ using Netonweb.Models;
 
 namespace Netonweb.Pages
 {
-    public class HelloWebModel : PageModel
+    public class TeachersModel : PageModel
     {
         public string Message { get; set; } = "In page model: ";
-        public Student student;
-        public List<Student> students;
-        
+        public Teacher teacher;
+        public List<Teacher> teachers;
+
 
         public void OnGet()
         {
             Message = "the time is";
-            student = Student.NewStudent();
-            students = Student.AllStudents(); 
+            teacher = Teacher.NewTeacher();
+            teachers = Teacher.AllTeachers();
         }
-        }
+    }
 }
-
-
-
-
