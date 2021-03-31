@@ -34,7 +34,6 @@ namespace Netonweb.Models
         allteachers.Add(new Teacher(3, "Sicco", 2));
         return allteachers;
     }
-
     }
 
 }
